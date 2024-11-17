@@ -11,8 +11,7 @@ function createResearchSection(title, content) {
 		"p-2",
 		"px-4",
 		"text-white",
-		"bg-primary",
-		"bg-opacity-70"
+		"research-topic-box"
 	);
 	sectionTitle.textContent = title;
 
