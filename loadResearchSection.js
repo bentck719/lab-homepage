@@ -1,4 +1,4 @@
-import { createInfoCard } from "./createInfoCard.js";
+import { createInfoCard } from "./public/components/createInfoCard.js";
 
 function loadResearchSections() {
 	const container = document.getElementById("research-sections");
