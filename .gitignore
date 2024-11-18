@@ -9,3 +9,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
+
+# dependencies
+node_modules/
+package-lock.json
+package.json

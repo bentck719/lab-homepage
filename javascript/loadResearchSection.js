@@ -1,31 +1,4 @@
-function createResearchSection(title, content) {
-	// 創建容器元素
-	const sectionContainer = document.createElement("div");
-	sectionContainer.classList.add("d-flex", "flex-column", "my-2");
-
-	// 創建標題元素
-	const sectionTitle = document.createElement("div");
-	sectionTitle.classList.add(
-		"fw-bold",
-		"fs-3",
-		"p-2",
-		"px-4",
-		"text-white",
-		"research-topic-box"
-	);
-	sectionTitle.textContent = title;
-
-	// 創建內容元素
-	const sectionContent = document.createElement("div");
-	sectionContent.classList.add("fs-5", "p-4", "bg-body-tertiary");
-	sectionContent.innerHTML = content;
-
-	// 將標題和內容加入容器
-	sectionContainer.appendChild(sectionTitle);
-	sectionContainer.appendChild(sectionContent);
-
-	return sectionContainer;
-}
+import { createInfoCard } from "./createInfoCard.js";
 
 function loadResearchSections() {
 	const container = document.getElementById("research-sections");
@@ -70,7 +43,7 @@ function loadResearchSections() {
 
 	// 動態插入 section
 	sections.forEach(({ title, content }) => {
-		const section = createResearchSection(title, content);
+		const section = createInfoCard(title, content);
 		container.appendChild(section);
 	});
 }
