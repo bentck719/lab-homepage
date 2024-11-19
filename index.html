@@ -10,19 +10,20 @@
 		/>
 		<script src="./loadNavbar.js" defer></script>
 		<script src="./loadCarousel.js" defer></script>
+		<script type="module" src="./loadResearchArea.js" defer></script>
 		<script type="module" src="./loadResearchSection.js" defer></script>
 		<script src="./loadFooter.js" defer></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
-	<body>
+	<body class="text-blue">
 		<div id="navbar-container"></div>
 		<div>
-			<div class="d-flex pb-3">
-				<div class="col-7" id="carousel-container"></div>
+			<div class="d-flex flex-column flex-lg-row pb-3">
+				<div class="col-lg-7" id="carousel-container"></div>
 				<div
-					class="col-5 d-flex flex-column justify-content-center fs-3 p-5 inner-text"
+					class="mx-auto col-11 col-lg-5 d-flex flex-column justify-content-center fs-3 px-5 py-3 border-bottom border-1 inner-text"
 				>
-					<p class="fw-bold fs-1">Welcom to CSSLab</p>
+					<p class="fw-bold fs-1">Welcome to CSSLab</p>
 					<p class="text-justify">
 						Hi, everyone! I am Chien-Chung Ho. I am now an Assistant Professor
 						with the Department of Computer Science and Information Engineering
@@ -30,30 +31,34 @@
 					</p>
 				</div>
 			</div>
-			<div class="d-flex justify-content-center mb-3">
-				<div class="card w-50">
-					<div class="card-header">My research area includes</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">Memory/Storage Systems</li>
-						<li class="list-group-item">Non-volatile Memory</li>
-						<li class="list-group-item">Computing-in-Memory Techniques</li>
-					</ul>
+			<div class="d-flex flex-column justify-content-center col-8 mx-auto">
+				<div class="my-5">
+					<p class="fs-3">My research area includes</p>
+					<div
+						id="research-list"
+						class="d-flex flex-column flex-lg-row justify-content-center gap-2"
+					></div>
 				</div>
-			</div>
-			<div class="container">
-				<div>
-					<h4>給正在找指導教授的學生們:</h4>
-					<p>
-						大家好，我是何建忠，我於2021/08/01開始於國立成功大學資訊工程學系就職，我的辦公室位於資訊系新館12樓65C04室，我的實驗室在資訊系新館65603室，歡迎大家來敲門詢問。下面簡述一些關於我的研究方向，若你/妳需要更細節的內容，也可以直接來信跟我聯絡。
-					</p>
-					<p>我的 email: ccho@gs.ncku.edu.tw</p>
+				<div class="my-4 p-5 bg-light">
+					<div class="text-justify fs-5">
+						<p>給正在找指導教授的學生們:</p>
+						<p>
+							大家好，我是何建忠，我於 2021/08/01
+							開始於國立成功大學資訊工程學系就職，我的辦公室位於資訊系新館 12 樓
+							65C04 室，我的實驗室在資訊系新館 65603
+							室，歡迎大家來敲門詢問。下面簡述一些關於我的研究方向，若你/妳需要更細節的內容，也可以直接來信跟我聯絡。
+						</p>
+						<p style="color: #b59f78">我的 email: ccho@gs.ncku.edu.tw</p>
+					</div>
+					<div
+						id="research-sections"
+						class="d-flex flex-column flex-lg-row gap-2"
+					></div>
+					<div class="fs-5 my-3">
+						<p>若你對實驗室目前這幾個方向有興趣，歡迎來信聯絡。</p>
+						<p>Best regards, Chien-Chung Ho</p>
+					</div>
 				</div>
-				<div
-					id="research-sections"
-					class="d-flex flex-column flex-lg-row gap-2"
-				></div>
-				<p>若你對實驗室目前這幾個方向有興趣，歡迎來信聯絡。</p>
-				<p>Best regards, Chien-Chung Ho</p>
 			</div>
 		</div>
 		<div id="footer-container"></div>

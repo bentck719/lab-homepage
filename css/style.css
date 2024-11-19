@@ -1,3 +1,7 @@
+.text-blue {
+	color: #102c57;
+}
+
 .research-topic-box {
 	background: #1f4529;
 }
@@ -21,4 +25,14 @@
 	background-color: #2a3663;
 	color: white;
 	transition: background-color 0.3s ease;
+}
+
+.my-container {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	width: 100%;
+	padding-right: calc(var(--bs-gutter-x));
+	padding-left: calc(var(--bs-gutter-x));
+	margin-right: auto;
+	margin-left: auto;
 }
