@@ -6,18 +6,25 @@ export function createInfoCard(title, content) {
 	// 創建標題元素
 	const sectionTitle = document.createElement("div");
 	sectionTitle.classList.add(
-		"fw-bold",
-		"fs-3",
+		"fw-semibold",
+		"fs-5",
 		"p-2",
 		"px-4",
 		"text-white",
-		"research-topic-box"
+		"research-topic-box",
+		"flex-grow-1"
 	);
 	sectionTitle.textContent = title;
 
 	// 創建內容元素
 	const sectionContent = document.createElement("div");
-	sectionContent.classList.add("fs-5", "p-4", "bg-body-tertiary");
+	sectionContent.classList.add(
+		"fs-5",
+		"p-4",
+		"bg-body",
+		"text-justify",
+		"flex-grow-1"
+	);
 	sectionContent.innerHTML = content;
 
 	// 將標題和內容加入容器

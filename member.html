@@ -9,11 +9,19 @@
 			rel="stylesheet"
 		/>
 		<script src="./loadNavbar.js" defer></script>
+		<script
+			type="Module"
+			src="./public/components/loadMemberCard.js"
+			defer
+		></script>
 		<script src="./loadFooter.js" defer></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
 		<div id="navbar-container"></div>
+		<div class="d-flex flex-column justify-content-center col-6 mx-auto m-5">
+			<div id="member-container"></div>
+		</div>
 		<div id="footer-container"></div>
 	</body>
 </html>
