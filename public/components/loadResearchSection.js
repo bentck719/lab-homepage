@@ -1,5 +1,3 @@
-import { createInfoCard } from "./public/components/createInfoCard.js";
-
 function loadResearchSections() {
 	const container = document.getElementById("research-sections");
 
@@ -41,10 +39,15 @@ function loadResearchSections() {
 		},
 	];
 
-	// 動態插入 section
-	sections.forEach(({ title, content }) => {
-		const section = createInfoCard(title, content);
-		container.appendChild(section);
+	sections.forEach((section) => {
+		const { title, content } = section;
+		const researchCard = document.createElement("div");
+		researchCard.innerHTML = `
+		<div class="d-flex flex-column my-2 h-100">
+			<div class="fw-semibold fs-5 p-2 px-4 text-white research-topic-box">${title}</div>
+			<div class="fs-5 p-4 bg-body text-justify flex-grow-1" style="height: auto">${content}</div>
+		</div>`;
+		container.appendChild(researchCard);
 	});
 }
 
