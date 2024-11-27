@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	const researches = [
 		// Add your research objects here
 		{
-			image: "./public/image/dummy.jpg",
-			title: "CXL",
-			content: "Tzu-Ching Kuo<br />Graduated Student",
+			image: "./public/image/CXL-logo.jpg",
+			title: "Compute Express Link, CXL",
+			content:
+				"CXL, a byte-addressable protocol based upon PCIe, is being leveraged to enhance current memory tiering systems. Recently, our focusing is on implementing CXL.mem to efficiently manage page caches, optimizing memory usage and performance.",
 		},
 		{
 			image: "./public/image/dummy.jpg",
