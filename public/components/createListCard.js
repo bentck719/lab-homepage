@@ -31,7 +31,8 @@ export function createListCard(content) {
 		"border",
 		"border-start-0",
 		"border-1",
-		"flex-grow-1"
+		"flex-grow-1",
+		"bg-white"
 	);
 	sectionContent.style.height = "100px";
 	sectionContent.innerHTML = content;
