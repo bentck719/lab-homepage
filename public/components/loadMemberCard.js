@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		{
 			image: "./public/image/dummy.jpg",
-			content: "Tzu-Ching Kuo<br />Graduated Student",
+			content: "黃丞漢<br />Graduated Student",
 		},
 		{
 			image: "./public/image/dummy.jpg",
