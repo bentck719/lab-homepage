@@ -28,15 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	];
 
-	let row;
-	members.forEach((member, index) => {
-		if (index % 2 === 0) {
-			row = document.createElement("div");
-			row.className = "row mb-3";
-			memberContainer.appendChild(row);
-		}
+	members.map((member) => {
 		const col = document.createElement("div");
-		col.className = "col-6 col-md-6";
+		col.className = "col-12 col-lg-6 col-xl-4 my-4";
 		col.innerHTML = `
   <div class="card">
     <img src="${member.image}" class="card-img-top" alt="..." />
@@ -46,6 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
       </p>
     </div>
   </div>`;
-		row.appendChild(col);
+		memberContainer.appendChild(col);
 	});
 });
