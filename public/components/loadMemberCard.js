@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	members.map((member) => {
 		const col = document.createElement("div");
-		col.className = "col-12 col-md-6 col-xl-4 my-4";
+		col.className = "col-12 col-lg-6 col-xxl-4 my-4";
 		col.innerHTML = `
   <div class="card">
     <img src="${member.image}" class="card-img-top" alt="..." />
