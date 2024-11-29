@@ -2,12 +2,16 @@
 	color: #102c57;
 }
 
-.research-topic-box {
-	background: #1f4529;
+.custom-min-height {
+	min-height: 300px;
 }
 
 .text-justify {
 	text-align: justify;
+}
+
+.research-topic-box {
+	background: #1f4529;
 }
 
 .nav-links {

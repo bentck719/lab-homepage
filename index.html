@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 	<head>
 		<meta charset="UTF-8" />
-		<title>CSSLab</title>
+		<title>NCKU CSSLab</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -10,12 +10,6 @@
 		/>
 		<script src="./loadNavbar.js" defer></script>
 		<script src="./loadCarousel.js" defer></script>
-		<script type="module" src="./loadResearchArea.js" defer></script>
-		<script
-			type="module"
-			src="./public/components/loadResearchSection.js"
-			defer
-		></script>
 		<script src="./loadFooter.js" defer></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
@@ -35,34 +29,23 @@
 					</p>
 				</div>
 			</div>
-			<div class="d-flex flex-column justify-content-center col-8 mx-auto">
-				<div class="my-5 p-5 bg-light">
-					<p class="fs-3">My research area includes</p>
-					<div
-						id="research-list"
-						class="d-flex flex-column flex-lg-row justify-content-center gap-2"
-					></div>
-				</div>
-				<div class="my-4 p-5 bg-light">
-					<div class="fs-5">
-						<p>給正在找指導教授的學生們:</p>
-						<p class="text-justify">
-							大家好，我是何建忠，我於 2021/08/01
-							開始於國立成功大學資訊工程學系就職，我的辦公室位於資訊系新館 12 樓
-							65C04 室，我的實驗室在資訊系新館 65603
-							室，歡迎大家來敲門詢問。下面簡述一些關於我的研究方向，若你/妳需要更細節的內容，也可以直接來信跟我聯絡。
-						</p>
-						<p style="color: #b59f78">我的 email: ccho@gs.ncku.edu.tw</p>
+			<div class="d-flex flex-column justify-content-center col-9 mx-auto mt-5">
+				<div class="d-flex align-items-center gap-4 border-bottom border-4 px-3">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 50px">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
+					</svg>
+					<div class="fs-2 fw-bold">
+					Bulletin Board</div>
+				</div>			
+				<div class="d-flex flex-column gap-3 p-3 custom-min-height">
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="d-flex align-items-center gap-2 fw-bold"><div class="p-2 bg-warning rounded">重要</div><div>2022-01-01</div></div>
+						<div>Happy New Year!</div>
 					</div>
-					<div
-						id="research-sections"
-						class="d-flex flex-column gap-2 justify-content-evenly align-items-stretch"
-					></div>
-					<div class="fs-5 mt-5">
-						<p>若你對實驗室目前這幾個方向有興趣，歡迎來信聯絡。</p>
-						<p>Best regards, Chien-Chung Ho</p>
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="d-flex align-items-center gap-2 fw-bold"><div class="p-2 bg-warning rounded">重要</div><div>2022-01-01</div></div>
+						<div>Merry Christmas!</div>
 					</div>
-				</div>
 			</div>
 		</div>
 		<div id="footer-container"></div>
