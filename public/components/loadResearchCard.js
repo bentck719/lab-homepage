@@ -9,9 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
 				"CXL, a byte-addressable protocol based upon PCIe, is being leveraged to enhance current memory tiering systems. Recently, our focusing is on implementing CXL.mem to efficiently manage page caches, optimizing memory usage and performance.",
 		},
 		{
-			image: "./public/image/dummy.jpg",
-			title: "Quantum",
-			content: "Tzu-Ching Kuo<br />Graduated Student",
+			image: "./public/image/search.svg",
+			title: "PIM - Processing in Memory, Processing Near Memory",
+			content: "",
+		},
+		{
+			image: "./public/image/search.svg",
+			title: "Quantum Computing Simulation",
+			content: "",
+		},
+		{
+			image: "./public/image/search.svg",
+			title: "NVM Memory/Storage System and Application Designs",
+			content: "",
+		},
+		{
+			image: "./public/image/search.svg",
+			title: "LLM on Resource-constrained Environment",
+			content: "",
 		},
 	];
 
@@ -21,7 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		col.innerHTML = `
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="${research.image}" class="img-fluid rounded" style="height: 100%; object-fit: cover" alt="..." />
+        <div style="width: 100%; height: 200px; overflow: hidden;">
+          <img src="${research.image}" class="img-fluid rounded" style="width: 100%; height: 100%; object-fit: cover;" alt="..." />
+        </div>
       </div>
       <div class="col-md-8">
         <div class="card-body">
