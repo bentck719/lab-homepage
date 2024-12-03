@@ -61,13 +61,14 @@
 		display: flex;
 		justify-content: center; /* Centers horizontally */
 		align-items: center; /* Centers vertically */
+		font-size: medium;
 	}
 
 	.icon {
 		fill: none; /* Optional: Ensures the SVG doesn't fill */
 		stroke-width: 1.5; /* Adjust stroke width */
 		stroke: currentColor; /* Inherit text color */
-		width: 24px; /* Adjust icon size */
-		height: 24px; /* Adjust icon size */
+		width: 20px; /* Adjust icon size */
+		height: 20px; /* Adjust icon size */
 	}
 }
