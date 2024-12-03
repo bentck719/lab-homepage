@@ -22,7 +22,7 @@
 
 .nav-links:hover {
 	padding: 8px;
-	border-radius: 10px;
+	border-radius: 50%;
 	background-color: #2a3663;
 	color: white;
 	transition: background-color 0.3s ease;
@@ -36,4 +36,18 @@
 	padding-left: calc(var(--bs-gutter-x));
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.icon {
+	fill: none; /* Optional: Ensures the SVG doesn't fill */
+	stroke-width: 1.5; /* Adjust stroke width */
+	stroke: currentColor; /* Inherit text color */
+	vertical-align: middle; /* Aligns icon vertically with text */
+}
+
+.icon-container {
+	display: flex;
+	justify-content: center; /* Centers horizontally */
+	align-items: center; /* Centers vertically */
+	width: 42px; /* Same width as the icon */
 }
