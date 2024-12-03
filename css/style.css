@@ -15,6 +15,10 @@
 }
 
 .nav-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
 	padding: 8px;
 	color: #2a3663;
 	text-decoration: none;
@@ -22,7 +26,7 @@
 
 .nav-links:hover {
 	padding: 8px;
-	border-radius: 50%;
+	border-radius: 20px;
 	background-color: #2a3663;
 	color: white;
 	transition: background-color 0.3s ease;
@@ -38,16 +42,32 @@
 	margin-left: auto;
 }
 
-.icon {
-	fill: none; /* Optional: Ensures the SVG doesn't fill */
-	stroke-width: 1.5; /* Adjust stroke width */
-	stroke: currentColor; /* Inherit text color */
-	vertical-align: middle; /* Aligns icon vertically with text */
-}
-
 .icon-container {
 	display: flex;
 	justify-content: center; /* Centers horizontally */
 	align-items: center; /* Centers vertically */
-	width: 42px; /* Same width as the icon */
+}
+
+.icon {
+	fill: none; /* Optional: Ensures the SVG doesn't fill */
+	stroke-width: 1.5; /* Adjust stroke width */
+	stroke: currentColor; /* Inherit text color */
+	width: 24px; /* Adjust icon size */
+	height: 24px; /* Adjust icon size */
+}
+
+@media (max-width: 768px) {
+	.icon-container {
+		display: flex;
+		justify-content: center; /* Centers horizontally */
+		align-items: center; /* Centers vertically */
+	}
+
+	.icon {
+		fill: none; /* Optional: Ensures the SVG doesn't fill */
+		stroke-width: 1.5; /* Adjust stroke width */
+		stroke: currentColor; /* Inherit text color */
+		width: 24px; /* Adjust icon size */
+		height: 24px; /* Adjust icon size */
+	}
 }
