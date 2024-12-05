@@ -72,3 +72,10 @@
 		height: 20px; /* Adjust icon size */
 	}
 }
+
+#bulletin-icon {
+	stroke-width: 1.5; /* Adjust stroke width */
+	stroke: currentColor; /* Inherit text color */
+	width: 36px; /* Adjust icon size */
+	height: 36px; /* Adjust icon size */
+}
